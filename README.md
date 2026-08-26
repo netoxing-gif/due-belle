@@ -71,6 +71,12 @@ O mesmo endereço público funciona em computador e celular. Contudo, os registr
 
 Para transformar o sistema em uma solução multiusuário, com dados compartilhados e backup centralizado, será necessário integrar uma base de dados e autenticação. Essa versão estática não possui servidor, banco de dados nem login.
 
+## Sincronização entre celular e computador
+
+Esta versão usa uma base Supabase com **múltiplos usuários em um studio compartilhado**. Cada pessoa usa o próprio e-mail e senha no celular e no computador, mas todas as contas autorizadas no Due Belle visualizam e atualizam o mesmo caixa, atendimentos, serviços e profissionais.
+
+O arquivo `index.html` já contém somente a URL e a chave pública de publicação do projeto. Não inclua a chave `service_role` no GitHub. As tabelas estão protegidas por políticas de acesso em nível de linha, de modo que somente o usuário autenticado acessa os próprios dados.
+
 ## Verificação rápida após publicar
 
 | Verificação | Resultado esperado |
